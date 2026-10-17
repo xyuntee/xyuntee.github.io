@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="xyuntee 的个人空间：记录作品、知识与日常灵感，让值得留下的光慢慢积累。">
+  <meta name="theme-color" content="#f8f5ee">
+  <title>余霞 Afterglow · xyuntee 的个人空间</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23f8f5ee'/%3E%3Ccircle cx='32' cy='29' r='14' fill='%23dc785a'/%3E%3Cpath d='M10 39h44M17 47h30' stroke='%23747d6b' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root{--bg:#f8f5ee;--surface:#fffcf7;--ink:#30382f;--muted:#777c70;--line:#dedfd3;--accent:#ba5c42;--sage:#e8ecdf;--orange:#f4e3d4;--shadow:0 20px 65px #34382b0d;--radius:22px;color-scheme:light}
+    :root[data-theme="dark"]{--bg:#202722;--surface:#2a322b;--ink:#f0eee4;--muted:#adb4a6;--line:#465044;--accent:#efa98a;--sage:#364338;--orange:#493b31;--shadow:0 20px 65px #0002;color-scheme:dark}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}button,input{font:inherit}a{color:inherit;text-decoration:none}button{color:inherit;cursor:pointer}button,a,input{ -webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}::selection{background:#eeb59c;color:#26342b}svg{display:block;max-width:100%}[hidden]{display:none!important}
+    .wrap{width:min(1120px,calc(100% - 80px));margin:auto}.skip{position:absolute;left:20px;top:-100px;z-index:100;background:var(--surface);padding:12px}.skip:focus{top:15px}.header{height:94px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:40px;height:40px}.brand strong{font-family:Georgia,"Songti SC",SimSun,serif;font-size:22px;font-weight:500;letter-spacing:3px}.brand small{display:block;font-size:9px;line-height:1.3;letter-spacing:2.4px;color:var(--muted)}.nav{display:flex;align-items:center;gap:31px;font-size:13px}.nav>a{color:var(--muted)}.nav>a:hover{color:var(--accent)}.theme{width:37px;height:37px;border:1px solid var(--line);border-radius:50%;background:transparent;display:grid;place-items:center}.theme svg{width:17px;height:17px}.eyebrow{font-size:10px;letter-spacing:3px;color:var(--muted);font-weight:600}.hero{padding:76px 0 68px;display:grid;grid-template-columns:1.08fr 1fr;align-items:center;gap:50px}.hello{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--muted);margin:0 0 25px}.hello span{width:7px;height:7px;background:#7b8b65;border-radius:50%}.hero h1{font-family:Georgia,"Songti SC",SimSun,serif;font-weight:500;letter-spacing:2px;font-size:clamp(40px,4.5vw,60px);line-height:1.42;margin:0 0 25px}.hero h1 em{font-style:normal;color:var(--accent)}.hero-copy{font-size:14px;line-height:2.1;color:var(--muted);max-width:370px;margin:0}.hero-actions{display:flex;align-items:center;gap:24px;margin-top:31px}.button{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:12px 22px;border-radius:8px;font-size:13px;border:1px solid transparent;background:var(--ink);color:var(--bg);transition:transform .2s}.button:hover{transform:translateY(-2px)}.text-link{font-size:12px;border-bottom:1px solid var(--line);padding-bottom:3px}.text-link:hover{color:var(--accent)}.hero-foot{margin-top:38px;display:flex;gap:17px;align-items:center;font-size:10px;color:var(--muted);letter-spacing:1px}.hero-foot i{height:1px;width:28px;background:var(--line)}
+    .art{position:relative;padding:14px 12px 30px 16px;transform:rotate(1.5deg)}.art-frame{overflow:hidden;border-radius:180px 180px 18px 18px;background:#f4dbba;box-shadow:var(--shadow)}.art-frame>svg{width:100%;height:auto}.art-caption{position:absolute;bottom:0;left:20px;right:10px;display:flex;justify-content:space-between;gap:14px;font-size:9px;letter-spacing:1.8px;color:var(--muted)}.art-stamp{position:absolute;bottom:55px;left:-9px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);padding:13px 17px;border-radius:6px;transform:rotate(-6deg);font-family:Georgia,"Songti SC",SimSun,serif;font-size:15px}.art-stamp small{display:block;font-family:inherit;font-size:9px;letter-spacing:1px;color:var(--muted)}.divider{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted);letter-spacing:1.6px}.divider span:last-child{letter-spacing:0}.archive{padding:65px 0 72px}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:25px;margin-bottom:28px}.section-head h2,.about h2{font-family:Georgia,"Songti SC",SimSun,serif;font-size:30px;letter-spacing:1.5px;font-weight:500;line-height:1.5;margin:8px 0 0}.section-head p{margin:9px 0 0;font-size:12px;color:var(--muted)}.search{position:relative;width:240px}.search svg{position:absolute;left:14px;top:15px;width:16px;height:16px;color:var(--muted);pointer-events:none}.search input{width:100%;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--ink);font-size:12px;padding:11px 12px 11px 39px;min-height:44px}.search input::placeholder{color:var(--muted)}.filters{display:flex;gap:8px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:28px}.filter{background:transparent;border:1px solid transparent;border-radius:7px;font-size:12px;padding:7px 14px;color:var(--muted);min-height:40px}.filter[aria-pressed="true"]{background:var(--sage);color:var(--ink);border-color:var(--line)}.result-count{margin-left:auto;font-size:10px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.card-link{display:block;text-align:left;width:100%;border:0;padding:0;background:transparent;height:100%}.card-art{height:155px;display:grid;place-items:center;position:relative;overflow:hidden}.card-art svg{width:165px;height:120px}.card-art.study{background:var(--sage)}.card-art.create{background:var(--orange)}.card-art.collect{background:#e7e8ed}.card-body{padding:21px 23px 22px}.meta{display:flex;gap:8px;align-items:center;font-size:10px;color:var(--muted)}.meta .demo{font-size:9px;border:1px solid var(--line);border-radius:4px;padding:0 5px}.card h3{font-family:Georgia,"Songti SC",SimSun,serif;font-size:20px;line-height:1.6;font-weight:500;margin:11px 0 9px;letter-spacing:.5px}.card p{font-size:12px;color:var(--muted);line-height:1.9;margin:0;min-height:46px}.card-bottom{border-top:1px solid var(--line);margin-top:21px;padding-top:13px;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:10px}.card-bottom span:last-child{font-size:16px}.empty{padding:58px 25px;text-align:center;border:1px dashed var(--line);border-radius:var(--radius);background:var(--surface)}.empty-icon{font-family:Georgia,serif;font-size:40px;color:var(--accent);line-height:1.2}.empty h3{font-family:Georgia,"Songti SC",SimSun,serif;font-size:22px;font-weight:500;margin:16px 0 8px}.empty p{font-size:12px;color:var(--muted);margin:0}.archive-note{font-size:10px;color:var(--muted);margin:22px 0 0;display:flex;gap:8px;align-items:center}.archive-note span{color:var(--accent)}
+    .about{display:grid;grid-template-columns:1fr 1.7fr;gap:80px;border-top:1px solid var(--line);padding:58px 0 68px}.about p{font-size:13px;line-height:2.2;color:var(--muted);margin:0 0 13px}.about p strong{font-weight:500;color:var(--ink)}.about-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:21px}.about-tags span{font-size:10px;border:1px solid var(--line);border-radius:30px;padding:5px 12px}.footer{border-top:1px solid var(--line);padding:24px 0 33px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}.footer a:hover{color:var(--accent)}.footer-saying{font-family:Georgia,serif;font-style:italic;font-size:12px}.footer-bottom{display:flex;gap:17px;align-items:center}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+    dialog{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:20px;max-width:720px;width:calc(100% - 32px);max-height:85vh;padding:0;box-shadow:0 25px 100px #0003}dialog::backdrop{background:#17231c77;backdrop-filter:blur(5px)}.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:18px 28px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--surface)}.dialog-head>span{font-size:10px;letter-spacing:2px;color:var(--muted)}.close{border:1px solid var(--line);border-radius:50%;background:transparent;font-size:22px;line-height:1;width:34px;height:34px}.article{padding:30px 36px 42px}.article h2{font-family:Georgia,"Songti SC",SimSun,serif;font-size:30px;font-weight:500;line-height:1.6;margin:12px 0 23px}.article h3{font-size:16px;font-weight:600;margin:28px 0 8px}.article p{font-size:14px;color:var(--muted);line-height:2.1;margin:0 0 16px}.article ul{padding-left:23px;color:var(--muted);font-size:14px;line-height:2}.article blockquote{background:var(--sage);border-left:3px solid var(--accent);margin:24px 0;padding:17px 20px;border-radius:0 8px 8px 0;font-family:Georgia,"Songti SC",SimSun,serif;line-height:1.9}.article-end{font-size:10px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin-top:30px}
+    @media(min-width:1500px){.hero{padding-top:92px;padding-bottom:85px}}@media(max-width:850px){.wrap{width:calc(100% - 48px)}.hero{gap:25px;padding-top:55px}.hero h1{font-size:40px}.art-stamp{font-size:12px;left:0}.grid{gap:13px}.card-body{padding:18px}.card h3{font-size:18px}.card-art{height:130px}.about{gap:40px;grid-template-columns:1fr 1.5fr}.nav{gap:20px}.hero-foot{font-size:9px;gap:10px}}@media(max-width:620px){.wrap{width:calc(100% - 36px)}.header{height:78px}.brand strong{font-size:19px}.brand-mark{width:33px}.brand small{font-size:8px}.nav{gap:15px;font-size:12px}.nav .about-nav{display:none}.theme{width:32px;height:32px}.hero{grid-template-columns:1fr;gap:30px;padding:43px 0 40px}.hero h1{font-size:43px}.hero-copy{max-width:100%}.hero-foot{margin-top:25px}.art{width:min(350px,90%);margin:0 auto}.art-frame{border-radius:150px 150px 14px 14px}.art-stamp{bottom:45px}.art-caption{font-size:8px}.divider{font-size:9px;gap:8px}.archive{padding:40px 0 45px}.section-head{display:block}.section-head h2,.about h2{font-size:28px}.search{margin-top:22px;width:100%}.filter{padding:7px 12px}.result-count{font-size:9px}.grid{grid-template-columns:1fr;gap:19px}.card-art{height:160px}.card-art svg{width:185px}.card-body{padding:22px}.card h3{font-size:22px}.card p{min-height:0}.about{grid-template-columns:1fr;gap:22px;padding:38px 0 45px}.footer{align-items:flex-start;flex-direction:column;gap:12px}.footer-bottom{width:100%;justify-content:space-between}.article{padding:23px}.article h2{font-size:25px}.dialog-head{padding:15px 22px}.hero-actions{gap:22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <div class="wrap">
+    <header class="header">
+      <a class="brand" href="#home" aria-label="余霞 Afterglow 首页">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="20" r="11" fill="#d68462"/><path d="M6 30h36M11 36h26M17 42h14" stroke="#7a846c" stroke-width="2" stroke-linecap="round"/></svg>
+        <span><strong>余霞</strong><small>AFTERGLOW</small></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#home">首页</a><a href="#archive">作品与笔记</a><a class="about-nav" href="#about">关于</a>
+        <button class="theme" id="theme-toggle" type="button" aria-label="切换到深色模式" title="切换深浅色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg></button>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div>
+          <p class="hello"><span aria-hidden="true"></span>你好，我是 xyuntee</p>
+          <h1 id="hero-title">把灵感留下，<br>让知识<em>发光。</em></h1>
+          <p class="hero-copy">这里是我的一方小天地。收藏用心完成的作品，记录值得反复翻阅的知识，也留一点空间，给生活里偶然出现的灵感。</p>
+          <div class="hero-actions"><a class="button" href="#archive">翻开我的记录 <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">认识这个角落</a></div>
+          <div class="hero-foot"><span>作品</span><i aria-hidden="true"></i><span>知识</span><i aria-hidden="true"></i><span>不期而遇的灵感</span></div>
+        </div>
+        <div class="art">
+          <div class="art-frame">
+            <svg viewBox="0 0 460 440" role="img" aria-labelledby="sunset-title"><title id="sunset-title">暖橘色晚霞、远山与平静的湖面</title><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c3cec7"/><stop offset=".45" stop-color="#ecd0ad"/><stop offset="1" stop-color="#e9a27b"/></linearGradient><linearGradient id="lake" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8bca2"/><stop offset="1" stop-color="#a7b7a0"/></linearGradient><radialGradient id="halo"><stop stop-color="#ffe3a4" stop-opacity=".8"/><stop offset="1" stop-color="#ffe3a4" stop-opacity="0"/></radialGradient></defs><rect width="460" height="440" fill="url(#sky)"/><circle cx="275" cy="170" r="120" fill="url(#halo)"/><circle cx="275" cy="170" r="46" fill="#fff0c9"/><g fill="none" stroke="#f9e6cb" stroke-linecap="round" opacity=".75"><path d="M35 126c48-9 96-8 150-1M111 144h89M316 107c43-7 79-7 126-1" stroke-width="7"/><path d="M22 183h93M345 151h79" stroke-width="3"/></g><path d="M0 254 61 198 128 248 213 196 311 258 393 212 460 252V350H0Z" fill="#969e86"/><path d="M0 282 95 239 166 278 236 241 340 287 417 256 460 281V367H0Z" fill="#7c8c74"/><path d="M0 312c86-20 145 8 233-6s163-10 227 5v129H0Z" fill="url(#lake)"/><g fill="none" stroke-linecap="round"><path d="M229 327h85M247 336h44M207 348h123M236 360h67M197 374h133" stroke="#f8dfb3" stroke-width="3" opacity=".7"/><path d="M41 339h71M334 355h68M51 381h97M341 397h60M177 412h75" stroke="#f1e4c9" stroke-width="2" opacity=".6"/></g><path d="M0 385c40-23 75-28 114-16l61 71H0Z" fill="#4d6556"/><path d="m57 398 10-74m-6 34-16-18m19 4 16-22m-22 56-23-17" stroke="#425b4e" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M0 414c54-26 100-18 154 26H0Z" fill="#3d574b"/><path d="m349 191 8-4 8 4m13-13 6-3 6 3" stroke="#6b7768" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <div class="art-stamp">日落之后，光还在。<small>A LITTLE LIGHT TO KEEP.</small></div>
+          <div class="art-caption"><span>AN ORDINARY, BEAUTIFUL EVENING</span><span>01 / AFTERGLOW</span></div>
+        </div>
+      </section>
+      <div class="divider"><span>A SMALL ARCHIVE OF THINGS THAT MATTER</span><span>慢慢记录，慢慢生长。</span></div>
+      <section class="archive" id="archive" aria-labelledby="archive-title">
+        <div class="section-head"><div><span class="eyebrow">THE COLLECTION</span><h2 id="archive-title">作品与笔记</h2><p>完成的创作，想通的问题，和还在生长的念头。</p></div><label class="search"><span class="sr-only">搜索作品与笔记</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="search" placeholder="寻找一个关键词…" autocomplete="off"></label></div>
+        <div class="filters" role="group" aria-label="按内容类型筛选"><button class="filter" data-filter="all" aria-pressed="true" type="button">全部内容</button><button class="filter" data-filter="project" aria-pressed="false" type="button">作品集</button><button class="filter" data-filter="note" aria-pressed="false" type="button">知识笔记</button><span class="result-count" id="result-count" role="status" aria-live="polite"></span></div>
+        <div class="grid" id="collection"></div>
+        <div class="empty" id="empty" hidden><div class="empty-icon" aria-hidden="true">✧</div><h3 id="empty-title">暂时没有找到相关内容</h3><p id="empty-text">换一个关键词，或看看其他分类吧。</p></div>
+        <p class="archive-note"><span aria-hidden="true">✳</span>这里先放了三篇示例笔记，期待用自己的记录慢慢填满。</p>
+      </section>
+      <section class="about" id="about" aria-labelledby="about-title"><div><span class="eyebrow">A LITTLE ABOUT THIS PLACE</span><h2 id="about-title">给值得留下的，<br>一个安放的地方。</h2></div><div><p><strong>你好，我是 xyuntee，欢迎来到余霞。</strong></p><p>我想用这个空间记录自己的作品，也整理那些重要的知识点。让零散的想法有迹可循，让认真做过的事情被好好看见。</p><p>“Afterglow”是日落后留在天边的余晖。愿每一份记录，都能在未来的某一天，再带来一点光。</p><div class="about-tags"><span>保持好奇</span><span>认真创作</span><span>持续记录</span><span>慢慢生长</span></div></div></section>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> xyuntee · 余霞 Afterglow</span><div class="footer-bottom"><span class="footer-saying">Keep a little light.</span><a href="https://github.com/xyuntee" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#home">回到顶部 ↑</a></div></footer>
+  </div>
+  <dialog id="reader" aria-labelledby="article-title"><div class="dialog-head"><span>AFTERGLOW / READING ROOM</span><button class="close" id="close-reader" aria-label="关闭文章" type="button">×</button></div><article class="article" id="article-content"></article></dialog>
+  <script>
+    /* 内容维护：在 entries 数组里增加条目。type 使用 note（笔记）或 project（作品）。
+       example: true 表示示例；发布自己的内容时改为 false。正文使用 p、h3、ul、quote 四种格式。
+       如要添加作品，可复制笔记条目并将 type 改为 project，再修改标题、摘要与正文。 */
+    const entries = [
+      {id:'knowledge-card',type:'note',title:'把知识变成自己的',summary:'从一个问题开始，用自己的话解释，再给它一个能用起来的例子。',category:'学习方法',date:'2026-10-17',minutes:3,art:'study',example:true,body:[
+        {kind:'p',text:'这是一篇示例笔记，展示如何把零散知识整理成一张值得反复翻阅的知识卡片。你可以用自己的学习记录替换它。'},
+        {kind:'h3',text:'01 / 先留下一个好问题'},
+        {kind:'p',text:'与其抄下一整页内容，不如先写清楚：我想解决什么问题？一个明确的问题，会让这张卡片在未来更容易被找到。'},
+        {kind:'h3',text:'02 / 用自己的话说一遍'},
+        {kind:'p',text:'先合上资料，试着用两三句话解释这个概念。如果有说不清的地方，就把它写成下一步要查的问题。'},
+        {kind:'quote',text:'记录的目的，是让未来的自己更容易理解和使用。'},
+        {kind:'h3',text:'03 / 给知识一个落脚点'},
+        {kind:'ul',items:['问题：这个知识点能帮助我做什么？','解释：我会怎样向一个刚接触它的人说明？','例子：能否找一个生活或作品中的场景？','边界：它在什么情况下可能不适用？','来源：留下原始资料，方便之后核对。']},
+        {kind:'p',text:'下次真正用到它时，再回到这里补一条实践记录。让笔记随着理解一起生长。'}]},
+      {id:'creative-log',type:'note',title:'为每一次创作留个底稿',summary:'作品之外，也记录出发点、尝试过的方向，以及最后做出的选择。',category:'创作记录',date:'2026-10-17',minutes:2,art:'create',example:true,body:[
+        {kind:'p',text:'这是一篇示例笔记。比起只保存最终结果，一份简短的创作记录，也能帮我们留下当时的判断和灵感。'},
+        {kind:'h3',text:'出发点'},
+        {kind:'p',text:'写下这次想做什么、为什么想做，以及最希望表达的一件事。不必写得完整，一句话也可以。'},
+        {kind:'h3',text:'过程里的选择'},
+        {kind:'ul',items:['保存一张草图或早期版本。','记录一次有用的尝试，也记录一个放弃的方向。','解释最终选择：它怎样服务于最初的想法？']},
+        {kind:'h3',text:'留给下一次'},
+        {kind:'p',text:'完成后，留下一个满意的地方和一个还想改进的地方。下一次开始创作时，它们就是很好的起点。'},
+        {kind:'quote',text:'成品让人看见结果，底稿让自己记得来路。'}]},
+      {id:'inspiration-inbox',type:'note',title:'给灵感一个临时住址',summary:'不急着把每个念头变成作品，先收下它，等合适的时刻再回来。',category:'灵感收集',date:'2026-10-17',minutes:2,art:'collect',example:true,body:[
+        {kind:'p',text:'这是一篇示例笔记，用来展示灵感随记的写法。一个让你停下来的画面、一句想继续琢磨的话，都可以成为记录的起点。'},
+        {kind:'h3',text:'先记下来，不急着分类'},
+        {kind:'p',text:'给念头留一个简单入口：一句话描述，加上触发它的场景。此刻只负责捕捉，整理可以等到之后。'},
+        {kind:'h3',text:'隔一段时间，再回来看看'},
+        {kind:'p',text:'挑一个轻松的时刻翻看这些碎片。把仍然让你感兴趣的内容标出来，尝试找找它们之间的联系。'},
+        {kind:'ul',items:['我当时为什么注意到它？','它与最近思考的问题有什么关系？','如果只做一个小尝试，我会从哪里开始？']},
+        {kind:'quote',text:'并非每一缕晚霞都要被解释，有些只需要被好好记住。'}]}
+    ];
+    const art = {
+      study:'<svg viewBox="0 0 200 140" aria-hidden="true"><rect x="56" y="20" width="86" height="108" rx="5" fill="#c7cfb5" transform="rotate(9 100 75)"/><rect x="46" y="15" width="86" height="108" rx="5" fill="#fffaf0" transform="rotate(-6 90 70)"/><g stroke="#a6b191" stroke-width="2.5" stroke-linecap="round"><path d="m65 45 46-5M64 58l44-4M63 72l30-3M62 86l48-5"/></g><path d="m125 87 29-51 7 4-29 52-10 9z" fill="#7b8a68"/><circle cx="45" cy="106" r="10" fill="#d9ba87"/></svg>',
+      create:'<svg viewBox="0 0 200 140" aria-hidden="true"><rect x="36" y="23" width="116" height="90" rx="5" fill="#fff9ed" transform="rotate(-5 94 68)"/><rect x="51" y="36" width="83" height="57" rx="2" fill="#eac7a5"/><circle cx="108" cy="53" r="11" fill="#fff0c7"/><path d="m51 85 23-25 22 22 13-13 25 24H51Z" fill="#9caa8a"/><path d="m122 104 31-66 8 4-31 66-9 5z" fill="#b96b4f"/><path d="m139 108 12 10" stroke="#d3ae7f" stroke-width="3" stroke-linecap="round"/></svg>',
+      collect:'<svg viewBox="0 0 200 140" aria-hidden="true"><path d="m54 51 39-22 51 22v57H54Z" fill="#adb8b3"/><path d="m54 51 46 29 44-29v57H54Z" fill="#d2d9cf"/><path d="M67 38h53v53H67Z" fill="#fffaf0" transform="rotate(-9 93 64)"/><path d="m94 40 6 14 15 2-11 10 3 15-13-7-13 7 2-15-10-10 15-2z" fill="#dab58c"/><path d="m54 65 46 22 44-22v43H54Z" fill="#a9b7a4"/><path d="m37 37 3-8 3 8 8 3-8 3-3 8-3-8-8-3zM151 79l2-6 2 6 6 2-6 2-2 6-2-6-6-2z" fill="#cfaa7d"/></svg>'
+    };
+    const list=document.getElementById('collection'), search=document.getElementById('search'), empty=document.getElementById('empty'), reader=document.getElementById('reader');
+    let activeFilter='all',lastOpenedButton=null;
+    function element(tag,cls,text){const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el;}
+    function render(){
+      const term=search.value.trim().toLocaleLowerCase();
+      const matches=entries.filter(e=>(activeFilter==='all'||e.type===activeFilter)&&[e.title,e.summary,e.category,...e.body.map(b=>b.text||b.items?.join(' ')||'')].join(' ').toLocaleLowerCase().includes(term));
+      list.replaceChildren(); list.hidden=!matches.length; empty.hidden=!!matches.length;
+      document.getElementById('result-count').textContent=matches.length+' 篇记录';
+      const isEmptyProjects=activeFilter==='project'&&!entries.some(e=>e.type==='project')&&!term;
+      document.getElementById('empty-title').textContent=isEmptyProjects?'第一件作品，留给下一次灵感。':'暂时没有找到相关内容';
+      document.getElementById('empty-text').textContent=isEmptyProjects?'这里会收藏自己的作品、制作过程与完成时的心情。':'换一个关键词，或看看其他分类吧。';
+      for(const e of matches){
+        const card=element('article','card'),button=element('button','card-link');button.type='button';button.setAttribute('aria-label','阅读：'+e.title);
+        const image=element('div','card-art '+e.art);image.innerHTML=art[e.art]||art.study;
+        const body=element('div','card-body'),meta=element('div','meta');meta.append(element('span','',e.type==='project'?'作品 / '+e.category:'笔记 / '+e.category));if(e.example)meta.append(element('span','demo','示例'));
+        body.append(meta,element('h3','',e.title),element('p','',e.summary));const bottom=element('div','card-bottom');bottom.append(element('span','',e.date.replaceAll('-','.')+' · '+e.minutes+' 分钟阅读'),element('span','','↗'));body.append(bottom);button.append(image,body);card.append(button);button.addEventListener('click',()=>{lastOpenedButton=button;openEntry(e.id);});list.append(card);
+      }
+    }
+    function openEntry(id){
+      const e=entries.find(e=>e.id===id);if(!e)return;
+      const content=document.getElementById('article-content');content.replaceChildren();
+      content.append(element('div','eyebrow',(e.example?'示例笔记 · ':'')+e.category+' / '+e.minutes+' 分钟阅读'));const title=element('h2','',e.title);title.id='article-title';content.append(title);
+      for(const block of e.body){if(block.kind==='ul'){const ul=element('ul');for(const text of block.items)ul.append(element('li','',text));content.append(ul);}else content.append(element(block.kind==='h3'?'h3':block.kind==='quote'?'blockquote':'p','',block.text));}
+      content.append(element('div','article-end','余霞 Afterglow · '+e.date+' · '+(e.example?'这篇内容为示例，可替换为自己的记录。':'xyuntee')));
+      if(!reader.open)reader.showModal();reader.scrollTop=0;document.body.style.overflow='hidden';
+      history.replaceState(null,'','#note/'+encodeURIComponent(id));
+    }
+    function closeEntry(){reader.close();}
+    document.getElementById('close-reader').addEventListener('click',closeEntry);
+    reader.addEventListener('click',event=>{if(event.target===reader){const r=reader.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)closeEntry();}});
+    reader.addEventListener('close',()=>{document.body.style.overflow='';history.replaceState(null,'','#archive');if(lastOpenedButton?.isConnected)lastOpenedButton.focus();});
+    document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{activeFilter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));render();}));
+    search.addEventListener('input',render);
+    const toggle=document.getElementById('theme-toggle');
+    function setTheme(theme){document.documentElement.dataset.theme=theme;toggle.setAttribute('aria-label',theme==='dark'?'切换到浅色模式':'切换到深色模式');toggle.setAttribute('aria-pressed',String(theme==='dark'));}
+    let storedTheme=null;try{storedTheme=localStorage.getItem('afterglow-theme');}catch{}
+    setTheme(storedTheme==='dark'?'dark':'light');
+    toggle.addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';setTheme(theme);try{localStorage.setItem('afterglow-theme',theme);}catch{}});
+    document.getElementById('year').textContent=String(new Date().getFullYear());render();
+    if(location.hash.startsWith('#note/')){try{openEntry(decodeURIComponent(location.hash.slice(6)));}catch{}}
+  </script>
+</body>
+</html>
