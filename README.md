@@ -1,6 +1,6 @@
 # 晚霞 Afterglow
 
-xyuntee 的个人主页，用来展示作品与整理知识笔记。
+晚霞的个人主页，用来展示作品与整理知识笔记。
 
 网站地址：https://xyuntee.github.io/
 
